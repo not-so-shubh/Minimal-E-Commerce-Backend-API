@@ -1,158 +1,138 @@
-📄 README.md
-# Minimal E-Commerce Backend API
+# 🛒 Minimal E-Commerce Backend API
 
-A clean and modular **Spring Boot + MongoDB** backend for an e-commerce platform.  
-This project focuses on backend architecture, RESTful API design, and real-world workflows such as cart handling, orders, and payments.
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.0+-green)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-forestgreen)
+
+A clean, modular, and production-inspired **Spring Boot + MongoDB** backend for an e-commerce platform.  
+This project is designed to demonstrate **backend architecture**, **RESTful API design**, and **real-world e-commerce workflows** such as carts, orders, and payments.
 
 ---
 
-## 🚀 Features
+## ✨ What This Project Covers
 
-- User management
-- Product catalog
-- Cart operations
-- Order creation and tracking
-- Mock payment processing
-- Payment webhook handling
-- RESTful API design
-- MongoDB persistence
+* Scalable backend structure following industry best practices
+* RESTful APIs with clear separation of concerns
+* MongoDB persistence using Spring Data
+* End-to-end e-commerce flow (Cart → Order → Payment)
+* Mock payment gateway with webhook handling
+* Easy local setup for learning and testing
+
+---
+
+## 🚀 Core Features
+
+### 👤 User Management
+* Create and manage users
+
+### 📦 Product Catalog
+* Add, view, and manage products
+
+### 🛒 Cart Operations
+* Add/remove products
+* Update quantities
+* View cart summary
+
+### 📦 Order Management
+* Create orders from cart
+* Track order status
+
+### 💳 Payments
+* Mock payment processing
+* Webhook simulation for payment confirmation
 
 ---
 
 ## 🛠 Tech Stack
 
-- Java 17
-- Spring Boot
-- MongoDB
-- Maven
-- REST APIs
-- Postman (API testing)
+* **Java 17**
+* **Spring Boot**
+* **MongoDB**
+* **Maven**
+* **REST APIs**
+* **Postman** (for API testing)
 
 ---
 
 ## 📂 Project Structure
 
-
-
+text
 src/main/java/com/example/ecommerce
-├── controller # REST controllers
-├── service # Business logic
-├── repository # MongoDB repositories
-├── model # Domain entities
-├── dto # Request / Response objects
-├── config # Configuration classes
-└── webhook # Payment webhook handlers
-
+├── controller   # REST API controllers
+├── service      # Business logic
+├── repository   # MongoDB repositories
+├── model        # Domain entities
+├── dto          # Request / Response DTOs
+├── config       # Application & database configuration
+└── webhook      # Payment webhook handlers
 
 ---
 
-## ⚙️ Run Locally
+## ⚙️ Running the Project Locally
 
 ### Prerequisites
-- Java 17+
-- MongoDB
-- Maven
+
+1. **Java 17** or higher
+2. **MongoDB** (running locally or via Docker)
+3. **Maven**
 
 ### Steps
-```bash
-git clone https://github.com/not-so-shubh/Minimal-E-Commerce-Backend-API.git
+
+1. **Clone the repository**
+
+git clone [https://github.com/not-so-shubh/Minimal-E-Commerce-Backend-API.git](https://github.com/not-so-shubh/Minimal-E-Commerce-Backend-API.git)
 cd Minimal-E-Commerce-Backend-API
+
+
+
+2. **Run the application**
+
 mvn spring-boot:run
 
 
-Application runs on:
 
-http://localhost:8080
-
-📖 Documentation
-
-API_DOCUMENTATION.md
-
-MANDATORY_APIS.md
-
-QUICK_REFERENCE.md
-
-ENTITY_STRUCTURE.md
-
-🧪 Testing
-
-Use Postman.
-See BONUS_POSTMAN_GUIDE.md.
-
-👤 Author
-
-Shubh Jaiswal
-
-📜 License
-
-Educational and portfolio use.
-
-
----
-
-## 📄 `API_DOCUMENTATION.md`
-
-```md
-# API Documentation
-
-Detailed documentation for all REST APIs exposed by the application.
-
----
-
-## Base URL
-
-
+3. **Access the API**
+The application will start at:
 http://localhost:8080
 
 
----
 
-## Modules
-
-- User APIs
-- Product APIs
-- Cart APIs
-- Order APIs
-- Payment APIs
-- Webhook APIs
 
 ---
 
-Each endpoint includes:
-- HTTP method
-- Endpoint path
-- Request body
-- Response body
-- Description
+## 📖 Documentation
 
-See `MANDATORY_APIS.md` for required endpoints.
+The project is supported by the following documentation files:
 
-📄 MANDATORY_APIS.md
-# Mandatory APIs
-
-Core APIs required for basic e-commerce functionality.
+* **[API_DOCUMENTATION.md](https://www.google.com/search?q=API_DOCUMENTATION.md)** Complete REST API documentation with endpoints, payloads, and responses.
+* **[QUICK_REFERENCE.md](https://www.google.com/search?q=QUICK_REFERENCE.md)** Concise cheat-sheet for commonly used APIs and flows.
+* **[ENTITY_STRUCTURE.md](https://www.google.com/search?q=ENTITY_STRUCTURE.md)** Overview of domain models and MongoDB entity relationships.
 
 ---
 
-## User
-- Create user
-- Get user details
+## 🧪 Testing the APIs
 
-## Product
-- Create product
-- Get all products
-- Get product by ID
+* Use **Postman** to test endpoints.
+* Import requests manually or create your own collections.
+* Refer to the documentation files for request examples.
 
-## Cart
-- Add item
-- View cart
-- Remove item
-- Clear cart
+---
 
-## Order
-- Create order
-- View order
+## 🎯 Intended Use
 
-## Payment
-- Initiate payment
-- Handle payment response
+* Learning Spring Boot + MongoDB backend development
+* Understanding clean backend architecture
+* Portfolio and interview preparation
+* API design practice
+
+---
+
+## 👤 Author
+
+**Shubh Jaiswal**
+
+---
+
+## 📜 License
+
+This project is intended for **educational and portfolio use**.
